@@ -20,6 +20,11 @@ export default function ElementCard({ el, dimmed, isSelected, onSelect, roving, 
         ? 'right-0'
         : 'left-1/2 -translate-x-1/2';
 
+  // The lanthanide/actinide rows sit at the bottom of the table, so a
+  // downward tooltip runs off the container; open it upward instead.
+  const openUpward = el.y >= 9;
+  const tooltipSideClass = openUpward ? 'bottom-full mb-2' : 'top-full mt-2';
+
   return (
     <button
       type="button"
@@ -84,7 +89,7 @@ export default function ElementCard({ el, dimmed, isSelected, onSelect, roving, 
 
       <span
         role="tooltip"
-        className={`pointer-events-none absolute top-full z-30 mt-2 hidden w-48 rounded-lg p-3 text-left text-[12px] shadow-2xl group-hover:block group-focus-visible:block ${tooltipPositionClass}`}
+        className={`pointer-events-none absolute z-30 hidden w-48 rounded-lg p-3 text-left text-[12px] shadow-2xl group-hover:block group-focus-visible:block ${tooltipPositionClass} ${tooltipSideClass}`}
         style={{
           background: 'var(--tooltip-bg)',
           border: `1px solid ${meta.color}88`,
