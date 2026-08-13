@@ -20,7 +20,7 @@ export default function ElementCard({ el, dimmed, isSelected, onSelect, roving, 
       aria-label={`${el.name}, atomic number ${el.z}, ${meta.label}${
         el.predicted ? ', properties predicted' : ''
       }`}
-      className="group relative flex flex-col items-start justify-between rounded-md px-1 py-1 text-left transition-all duration-200 focus:outline-none"
+      className="group relative z-0 flex flex-col items-start justify-between rounded-md px-1 py-1 text-left transition-all duration-200 hover:z-20 focus-visible:z-20 focus:outline-none"
       style={{
         gridColumn: el.x,
         gridRow: el.y,
@@ -72,18 +72,19 @@ export default function ElementCard({ el, dimmed, isSelected, onSelect, roving, 
 
       <span
         role="tooltip"
-        className="pointer-events-none absolute left-1/2 top-full z-30 mt-2 hidden w-44 -translate-x-1/2 rounded-lg p-2 text-left text-[11px] shadow-xl group-hover:block group-focus-visible:block"
+        className="pointer-events-none absolute left-1/2 top-full z-30 mt-2 hidden w-48 -translate-x-1/2 rounded-lg p-3 text-left text-[12px] shadow-2xl group-hover:block group-focus-visible:block"
         style={{
           background: 'var(--tooltip-bg)',
-          border: '1px solid var(--line-soft)',
+          border: `1px solid ${meta.color}88`,
+          boxShadow: `0 8px 24px -4px rgba(0,0,0,0.5), 0 0 0 1px ${meta.color}22`,
           color: 'var(--text-secondary)',
         }}
       >
-        <span className="block font-display text-[12px] font-semibold" style={{ color: 'var(--text-primary)' }}>
+        <span className="block font-display text-[13px] font-semibold" style={{ color: 'var(--text-primary)' }}>
           {el.name} &middot; #{el.z}
         </span>
-        <span className="mt-0.5 block font-mono">{formatConfig(el.econfig)}</span>
-        <span className="mt-0.5 block" style={{ color: meta.color }}>
+        <span className="mt-1 block font-mono">{formatConfig(el.econfig)}</span>
+        <span className="mt-1 block" style={{ color: meta.color }}>
           {meta.label}
           {el.predicted ? ' (predicted)' : ''}
         </span>
