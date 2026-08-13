@@ -8,6 +8,18 @@ import { formatConfig } from '../lib/format';
 export default function ElementCard({ el, dimmed, isSelected, onSelect, roving, onFocusTile }) {
   const meta = categoryMeta(el.category);
 
+  /**
+   * The tooltip is centred under the tile by default, but that runs it off
+   * the viewport for tiles near the left/right edge of the 18-column grid.
+   */
+  const edgeAlign = el.x <= 3 ? 'left' : el.x >= 16 ? 'right' : 'center';
+  const tooltipPositionClass =
+    edgeAlign === 'left'
+      ? 'left-0'
+      : edgeAlign === 'right'
+        ? 'right-0'
+        : 'left-1/2 -translate-x-1/2';
+
   return (
     <button
       type="button"
@@ -72,7 +84,7 @@ export default function ElementCard({ el, dimmed, isSelected, onSelect, roving, 
 
       <span
         role="tooltip"
-        className="pointer-events-none absolute left-1/2 top-full z-30 mt-2 hidden w-48 -translate-x-1/2 rounded-lg p-3 text-left text-[12px] shadow-2xl group-hover:block group-focus-visible:block"
+        className={`pointer-events-none absolute top-full z-30 mt-2 hidden w-48 rounded-lg p-3 text-left text-[12px] shadow-2xl group-hover:block group-focus-visible:block ${tooltipPositionClass}`}
         style={{
           background: 'var(--tooltip-bg)',
           border: `1px solid ${meta.color}88`,

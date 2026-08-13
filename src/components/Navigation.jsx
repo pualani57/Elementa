@@ -11,8 +11,8 @@ export default function Navigation({ view, setView, theme, setTheme, reducedMoti
       className="sticky top-0 z-20 backdrop-blur"
       style={{ background: 'var(--header-bg)', borderBottom: '1px solid var(--line-soft)' }}
     >
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-3 px-4 py-3">
-        <div className="flex items-center gap-2">
+      <div className="mx-auto flex max-w-7xl flex-nowrap items-center gap-3 px-4 py-3">
+        <div className="flex flex-none items-center gap-2">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <circle cx="12" cy="12" r="2.6" fill="var(--accent-amber)" />
             <ellipse cx="12" cy="12" rx="10" ry="4.2" stroke="var(--accent-cyan)" strokeWidth="1.4" />
@@ -24,14 +24,14 @@ export default function Navigation({ view, setView, theme, setTheme, reducedMoti
           </h1>
         </div>
 
-        <nav className="flex flex-1 flex-wrap gap-1" aria-label="Main sections">
+        <nav className="flex flex-1 gap-1 overflow-x-auto" aria-label="Main sections">
           {VIEWS.map((v) => (
             <button
               key={v.key}
               type="button"
               onClick={() => setView(v.key)}
               aria-current={view === v.key ? 'page' : undefined}
-              className="rounded-lg px-3 py-1.5 text-sm font-medium transition-colors focus:outline-none"
+              className="flex-none whitespace-nowrap rounded-lg px-3 py-1.5 text-sm font-medium transition-colors focus:outline-none"
               style={{
                 background: view === v.key ? 'var(--chip-active-bg)' : 'transparent',
                 color: view === v.key ? 'var(--accent-cyan)' : 'var(--text-secondary)',
@@ -42,7 +42,7 @@ export default function Navigation({ view, setView, theme, setTheme, reducedMoti
           ))}
         </nav>
 
-        <div className="flex items-center gap-1.5">
+        <div className="flex flex-none items-center gap-1.5">
           <button
             type="button"
             onClick={() => setReducedMotion((r) => !r)}

@@ -42,6 +42,17 @@ export default function App() {
     return () => window.removeEventListener('keydown', onKey);
   }, [selectedSym]);
 
+  // Lock background scroll while the Explorer overlay is open, otherwise the
+  // page behind it scrolls invisibly and jumps when the panel closes.
+  useEffect(() => {
+    if (!selectedSym) return undefined;
+    const { overflow } = document.body.style;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = overflow;
+    };
+  }, [selectedSym]);
+
   const resultCount = useMemo(
     () => ELEMENTS.filter((e) => matchesSearch(e, search) && matchesFilters(e, filters)).length,
     [search, filters]
