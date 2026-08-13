@@ -1,0 +1,326 @@
+[
+ {
+  "a": "H",
+  "b": "O",
+  "formula": "H2O",
+  "bondType": "polar-covalent",
+  "pairs": 2,
+  "geometry": "bent",
+  "note": "Oxygen pulls shared electrons closer, giving water's bent shape and its polarity — the reason water is such a good solvent."
+ },
+ {
+  "a": "H",
+  "b": "N",
+  "formula": "NH3",
+  "bondType": "polar-covalent",
+  "pairs": 3,
+  "geometry": "trigonal pyramidal",
+  "note": "Nitrogen shares one electron pair with each of three hydrogens, leaving a lone pair that makes ammonia a base."
+ },
+ {
+  "a": "H",
+  "b": "C",
+  "formula": "CH4",
+  "bondType": "covalent",
+  "pairs": 4,
+  "geometry": "tetrahedral",
+  "note": "Carbon and hydrogen have nearly equal electronegativity, so each C–H bond is only weakly polar overall."
+ },
+ {
+  "a": "H",
+  "b": "Cl",
+  "formula": "HCl",
+  "bondType": "polar-covalent",
+  "pairs": 1,
+  "geometry": "linear",
+  "note": "Chlorine is far more electronegative than hydrogen, pulling the shared pair toward itself and making HCl a strong acid in water."
+ },
+ {
+  "a": "H",
+  "b": "F",
+  "formula": "HF",
+  "bondType": "polar-covalent",
+  "pairs": 1,
+  "geometry": "linear",
+  "note": "Fluorine is the most electronegative element, making this one of the most polarized single bonds possible."
+ },
+ {
+  "a": "H",
+  "b": "Br",
+  "formula": "HBr",
+  "bondType": "polar-covalent",
+  "pairs": 1,
+  "geometry": "linear",
+  "note": "A single shared pair, pulled toward the more electronegative bromine atom."
+ },
+ {
+  "a": "H",
+  "b": "I",
+  "formula": "HI",
+  "bondType": "polar-covalent",
+  "pairs": 1,
+  "geometry": "linear",
+  "note": "A single shared pair; the small electronegativity gap makes this one of the weaker hydrogen halides."
+ },
+ {
+  "a": "H",
+  "b": "S",
+  "formula": "H2S",
+  "bondType": "polar-covalent",
+  "pairs": 2,
+  "geometry": "bent",
+  "note": "Structurally similar to water but with a smaller electronegativity gap, so it's a weaker, smellier analog."
+ },
+ {
+  "a": "C",
+  "b": "O",
+  "formula": "CO2",
+  "bondType": "covalent",
+  "pairs": 4,
+  "geometry": "linear",
+  "note": "Each C=O bond is polar, but the two point in opposite directions, so the linear molecule cancels out to nonpolar overall."
+ },
+ {
+  "a": "N",
+  "b": "O",
+  "formula": "NO2",
+  "bondType": "polar-covalent",
+  "pairs": 3,
+  "geometry": "bent",
+  "note": "A reddish-brown gas; nitrogen and oxygen also form NO and N2O4 depending on conditions."
+ },
+ {
+  "a": "O",
+  "b": "S",
+  "formula": "SO2",
+  "bondType": "polar-covalent",
+  "pairs": 4,
+  "geometry": "bent",
+  "note": "A pungent gas from burning sulfur; further oxidation under industrial conditions produces SO3 for making sulfuric acid."
+ },
+ {
+  "a": "Cl",
+  "b": "P",
+  "formula": "PCl3",
+  "bondType": "polar-covalent",
+  "pairs": 3,
+  "geometry": "trigonal pyramidal",
+  "note": "Phosphorus shares three pairs with chlorine; with excess chlorine it can react further to form PCl5."
+ },
+ {
+  "a": "O",
+  "b": "Si",
+  "formula": "SiO2",
+  "bondType": "network-covalent",
+  "pairs": null,
+  "geometry": "network",
+  "note": "Not a small molecule — silicon and oxygen link into a giant covalent lattice. This is ordinary quartz sand."
+ },
+ {
+  "a": "C",
+  "b": "Si",
+  "formula": "SiC",
+  "bondType": "network-covalent",
+  "pairs": null,
+  "geometry": "network",
+  "note": "A giant covalent lattice nearly as hard as diamond, used industrially as an abrasive (carborundum)."
+ },
+ {
+  "a": "C",
+  "b": "Cl",
+  "formula": "CCl4",
+  "bondType": "covalent",
+  "pairs": 4,
+  "geometry": "tetrahedral",
+  "note": "Each C–Cl bond is polar, but the symmetric tetrahedral shape cancels the polarity, making the molecule nonpolar overall."
+ },
+ {
+  "a": "B",
+  "b": "F",
+  "formula": "BF3",
+  "bondType": "polar-covalent",
+  "pairs": 3,
+  "geometry": "trigonal planar",
+  "note": "Boron has only three valence electrons to share, leaving it electron-deficient — BF3 is a classic Lewis acid."
+ },
+ {
+  "a": "C",
+  "b": "N",
+  "formula": "HCN",
+  "bondType": "polar-covalent",
+  "pairs": null,
+  "geometry": "linear",
+  "note": "Best known as hydrogen cyanide; carbon and nitrogen share a triple bond within the molecule."
+ },
+ {
+  "a": "Fe",
+  "b": "O",
+  "formula": "Fe2O3",
+  "bondType": "ionic",
+  "pairs": null,
+  "geometry": "lattice",
+  "note": "Ordinary rust. Iron also forms FeO (iron(II) oxide) under different conditions — iron's oxidation state varies."
+ },
+ {
+  "a": "Cl",
+  "b": "Fe",
+  "formula": "FeCl3",
+  "bondType": "ionic",
+  "pairs": null,
+  "geometry": "lattice",
+  "note": "Iron(III) chloride. Iron also commonly forms FeCl2 (iron(II) chloride)."
+ },
+ {
+  "a": "Cu",
+  "b": "O",
+  "formula": "CuO",
+  "bondType": "ionic",
+  "pairs": null,
+  "geometry": "lattice",
+  "note": "Copper(II) oxide, a black solid. Copper also forms the red Cu2O (copper(I) oxide)."
+ },
+ {
+  "a": "Cl",
+  "b": "Cu",
+  "formula": "CuCl2",
+  "bondType": "ionic",
+  "pairs": null,
+  "geometry": "lattice",
+  "note": "Copper(II) chloride, a blue-green solid often used to color flames."
+ },
+ {
+  "a": "Ni",
+  "b": "O",
+  "formula": "NiO",
+  "bondType": "ionic",
+  "pairs": null,
+  "geometry": "lattice",
+  "note": "Nickel(II) oxide, a green-black solid used in ceramics and battery electrodes."
+ },
+ {
+  "a": "Cl",
+  "b": "Co",
+  "formula": "CoCl2",
+  "bondType": "ionic",
+  "pairs": null,
+  "geometry": "lattice",
+  "note": "Cobalt(II) chloride — famous for changing color with humidity, from blue (dry) to pink (hydrated)."
+ },
+ {
+  "a": "Mn",
+  "b": "O",
+  "formula": "MnO2",
+  "bondType": "ionic",
+  "pairs": null,
+  "geometry": "lattice",
+  "note": "Manganese(IV) oxide, used in dry-cell batteries and as a catalyst for decomposing hydrogen peroxide."
+ },
+ {
+  "a": "Cr",
+  "b": "O",
+  "formula": "Cr2O3",
+  "bondType": "ionic",
+  "pairs": null,
+  "geometry": "lattice",
+  "note": "Chromium(III) oxide, a green pigment and the compound behind chromium's corrosion resistance."
+ },
+ {
+  "a": "O",
+  "b": "Ti",
+  "formula": "TiO2",
+  "bondType": "ionic",
+  "pairs": null,
+  "geometry": "lattice",
+  "note": "Titanium dioxide, the most widely used white pigment, also found in sunscreen and paint."
+ },
+ {
+  "a": "O",
+  "b": "Sn",
+  "formula": "SnO2",
+  "bondType": "ionic",
+  "pairs": null,
+  "geometry": "lattice",
+  "note": "Tin(IV) oxide, used in ceramic glazes and as a transparent conductive coating."
+ },
+ {
+  "a": "O",
+  "b": "Pb",
+  "formula": "PbO2",
+  "bondType": "ionic",
+  "pairs": null,
+  "geometry": "lattice",
+  "note": "Lead(IV) oxide, the electrode material in lead-acid car batteries."
+ },
+ {
+  "a": "Hg",
+  "b": "O",
+  "formula": "HgO",
+  "bondType": "ionic",
+  "pairs": null,
+  "geometry": "lattice",
+  "note": "Mercury(II) oxide, a toxic red or yellow solid, historically used in early batteries."
+ },
+ {
+  "a": "Au",
+  "b": "Cl",
+  "formula": "AuCl3",
+  "bondType": "polar-covalent",
+  "pairs": null,
+  "geometry": "lattice",
+  "note": "Gold(III) chloride — gold's normal reluctance to react is overcome by chlorine's strong pull on electrons."
+ },
+ {
+  "a": "Cl",
+  "b": "Pt",
+  "formula": "PtCl2",
+  "bondType": "polar-covalent",
+  "pairs": null,
+  "geometry": "lattice",
+  "note": "Platinum(II) chloride, a starting material for making other platinum compounds and catalysts."
+ },
+ {
+  "a": "O",
+  "b": "W",
+  "formula": "WO3",
+  "bondType": "ionic",
+  "pairs": null,
+  "geometry": "lattice",
+  "note": "Tungsten trioxide, a yellow solid used in electrochromic 'smart glass' that darkens electrically."
+ },
+ {
+  "a": "Pb",
+  "b": "S",
+  "formula": "PbS",
+  "bondType": "ionic",
+  "pairs": null,
+  "geometry": "lattice",
+  "note": "Lead(II) sulfide — the mineral galena, historically used as an early semiconductor crystal detector."
+ },
+ {
+  "a": "F",
+  "b": "Xe",
+  "formula": "XeF2",
+  "bondType": "covalent",
+  "pairs": null,
+  "geometry": "linear",
+  "note": "One of the few real noble-gas compounds — xenon is large enough for its outer electrons to be coaxed into bonding with fluorine."
+ },
+ {
+  "a": "O",
+  "b": "Xe",
+  "formula": "XeO3",
+  "bondType": "covalent",
+  "pairs": null,
+  "geometry": "trigonal pyramidal",
+  "note": "A rare, explosively unstable noble-gas compound, showing xenon can be forced to share electrons under the right conditions."
+ },
+ {
+  "a": "F",
+  "b": "Kr",
+  "formula": "KrF2",
+  "bondType": "covalent",
+  "pairs": null,
+  "geometry": "linear",
+  "note": "Krypton bonds even more reluctantly than xenon; KrF2 only survives at very low temperatures."
+ }
+]
